@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Temperamento</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1>Teste de <br />Temperamento</h1>
+    <div class="introduction">
+      <h2>Como funciona?</h2>
+      <p>
+        Hipócrates, pioneiro na medicina antiga, formulou a teoria dos quatro
+        humores: sanguíneo, colérico, melancólico e fleumático, como base para
+        entender a constituição psicofísica humana. Cada temperamento apresenta
+        qualidades e vulnerabilidades intrínsecas. Esta taxonomia não é
+        hierárquica; nenhum temperamento é superior a outro. Cada um oferece uma
+        perspectiva única e contribuições valiosas em diferentes contextos.
+        Importante notar que Hipócrates fundamentou essa teoria em observações
+        empíricas, e ela ainda encontra aplicabilidade contemporânea na
+        psicologia e medicina comportamental. Portanto, entender esses
+        temperamentos pode ser instrumental para o autoconhecimento e
+        desenvolvimento pessoal.
+      </p>
+      <h2>Passo a Passo</h2>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="step">
+          <div class="step-number">1</div>
+          <span
+            >Selecione as palavras na lista abaixo para circular as que mais se
+            encaixam com você.</span
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="step">
+          <div class="step-number">2</div>
+          <span
+            >Leia as colunas horizontalmente e circule apenas uma palavra de
+            cada linha.</span
+          >
+        </div>
+      </div>
+      <div class="card">
+        <div class="step">
+          <div class="step-number">3</div>
+          <span
+            >Quando finalizar, clique em resultado. O sistema irá calcular
+            automaticamente e identificar o seu temperamento predominante.</span
+          >
+        </div>
+      </div>
+    </div>
+    <table class="conteiner">
+      <thead>
+        <tr>
+          <th>COLUNA 1</th>
+          <th>COLUNA 2</th>
+          <th>COLUNA 3</th>
+          <th>COLUNA 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row1" value="Sanguíneo" />
+              <span class="circle"></span> Despreocupado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row1" value="Colérico" />
+              <span class="circle"></span> Impulsivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row1" value="Melancólico" />
+              <span class="circle"></span> Pessimista
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row1" value="Fleumático" />
+              <span class="circle"></span> Cuidadoso
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row2" value="Sanguíneo" />
+              <span class="circle"></span> Calmo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row2" value="Colérico" />
+              <span class="circle"></span> Irrequieto
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row2" value="Melancólico" />
+              <span class="circle"></span> Melancólico
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row2" value="Fleumático" />
+              <span class="circle"></span> Metódico
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row3" value="Sanguíneo" />
+              <span class="circle"></span> Animado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row3" value="Colérico" />
+              <span class="circle"></span> Esquentado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row3" value="Melancólico" />
+              <span class="circle"></span> Amuado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row3" value="Fleumático" />
+              <span class="circle"></span> Estável
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row4" value="Sanguíneo" />
+              <span class="circle"></span> Jovial
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row4" value="Colérico" />
+              <span class="circle"></span> Ativo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row4" value="Melancólico" />
+              <span class="circle"></span> Sóbrio
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row4" value="Fleumático" />
+              <span class="circle"></span> Passivo
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row5" value="Sanguíneo" />
+              <span class="circle"></span> Sociável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row5" value="Colérico" />
+              <span class="circle"></span> Excitável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row5" value="Melancólico" />
+              <span class="circle"></span> Nervoso
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row5" value="Fleumático" />
+              <span class="circle"></span> Pacato
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row6" value="Sanguíneo" />
+              <span class="circle"></span> Simpático
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row6" value="Colérico" />
+              <span class="circle"></span> Corado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row6" value="Melancólico" />
+              <span class="circle"></span> Distante
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row6" value="Fleumático" />
+              <span class="circle"></span> Pensativo
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row7" value="Sanguíneo" />
+              <span class="circle"></span> Loquaz
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row7" value="Colérico" />
+              <span class="circle"></span> Agressivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row7" value="Melancólico" />
+              <span class="circle"></span> Quieto
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row7" value="Fleumático" />
+              <span class="circle"></span> Calmo
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row8" value="Sanguíneo" />
+              <span class="circle"></span> Age Rápido
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row8" value="Colérico" />
+              <span class="circle"></span> Um Líder
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row8" value="Melancólico" />
+              <span class="circle"></span> Reservado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row8" value="Fleumático" />
+              <span class="circle"></span> Controlado
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row9" value="Sanguíneo" />
+              <span class="circle"></span> Workaholic
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row9" value="Colérico" />
+              <span class="circle"></span> Convincente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row9" value="Melancólico" />
+              <span class="circle"></span> Resignado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row9" value="Fleumático" />
+              <span class="circle"></span> Folgado
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row10" value="Sanguíneo" />
+              <span class="circle"></span>Tagarela
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row10" value="Colérico" />
+              <span class="circle"></span> Cheio de Energia
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row10" value="Melancólico" />
+              <span class="circle"></span> Triste
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row10" value="Fleumático" />
+              <span class="circle"></span> Plácido
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row11" value="Sanguíneo" />
+              <span class="circle"></span> Eloquente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row11" value="Colérico" />
+              <span class="circle"></span> Extrovertido
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row11" value="Melancólico" />
+              <span class="circle"></span> Desanimado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row11" value="Fleumático" />
+              <span class="circle"></span> Sem Pressa
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row12" value="Sanguíneo" />
+              <span class="circle"></span> Superficial
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row12" value="Colérico" />
+              <span class="circle"></span> Turbulento
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row12" value="Melancólico" />
+              <span class="circle"></span> Pensativo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row12" value="Fleumático" />
+              <span class="circle"></span> Lento
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row13" value="Sanguíneo" />
+              <span class="circle"></span>Expansivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row13" value="Colérico" />
+              <span class="circle"></span> Impaciente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row13" value="Melancólico" />
+              <span class="circle"></span> Instrospectivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row13" value="Fleumático" />
+              <span class="circle"></span> Implacável
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row14" value="Sanguíneo" />
+              <span class="circle"></span> Falante
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row14" value="Colérico" />
+              <span class="circle"></span> Empreendedor
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row14" value="Melancólico" />
+              <span class="circle"></span> Egoísta
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row14" value="Fleumático" />
+              <span class="circle"></span> Comedido
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row15" value="Sanguíneo" />
+              <span class="circle"></span> Amigável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row15" value="Colérico" />
+              <span class="circle"></span> Pioneiro
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row15" value="Melancólico" />
+              <span class="circle"></span> Exigente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row15" value="Fleumático" />
+              <span class="circle"></span> Tranquilo
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row16" value="Sanguíneo" />
+              <span class="circle"></span> Adaptável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row16" value="Colérico" />
+              <span class="circle"></span> Barulhento
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row16" value="Melancólico" />
+              <span class="circle"></span> Suscetível
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row16" value="Fleumático" />
+              <span class="circle"></span> Ensimesmado
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row17" value="Sanguíneo" />
+              <span class="circle"></span> Pitoresco
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row17" value="Colérico" />
+              <span class="circle"></span> Prático
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row17" value="Melancólico" />
+              <span class="circle"></span> Leitor
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row17" value="Fleumático" />
+              <span class="circle"></span> Reservado
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row18" value="Sanguíneo" />
+              <span class="circle"></span> Brilhante
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row18" value="Colérico" />
+              <span class="circle"></span> Dramático
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row18" value="Melancólico" />
+              <span class="circle"></span> Lento
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row18" value="Fleumático" />
+              <span class="circle"></span> Sonhador
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row19" value="Sanguíneo" />
+              <span class="circle"></span> Impaciente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row19" value="Colérico" />
+              <span class="circle"></span> Esquecido
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row19" value="Melancólico" />
+              <span class="circle"></span> Tristonho
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row19" value="Fleumático" />
+              <span class="circle"></span> Gosta de Rotina
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row20" value="Sanguíneo" />
+              <span class="circle"></span> Irresponsável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row20" value="Colérico" />
+              <span class="circle"></span> Esportivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row20" value="Melancólico" />
+              <span class="circle"></span> Taciturno
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row20" value="Fleumático" />
+              <span class="circle"></span> Lento para aprender
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row21" value="Sanguíneo" />
+              <span class="circle"></span> Não - Confiável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row21" value="Colérico" />
+              <span class="circle"></span> Competitivo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row21" value="Melancólico" />
+              <span class="circle"></span> Intelectual
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row21" value="Fleumático" />
+              <span class="circle"></span> Perseverante
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row22" value="Sanguíneo" />
+              <span class="circle"></span> Fugidio
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row22" value="Colérico" />
+              <span class="circle"></span> Resistente
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row22" value="Melancólico" />
+              <span class="circle"></span> Boa Memória
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row22" value="Fleumático" />
+              <span class="circle"></span> Obstinado
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row23" value="Sanguíneo" />
+              <span class="circle"></span> Flexível
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row23" value="Colérico" />
+              <span class="circle"></span> Dominador
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row23" value="Melancólico" />
+              <span class="circle"></span> Observador
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row23" value="Fleumático" />
+              <span class="circle"></span> Tímido
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row24" value="Sanguíneo" />
+              <span class="circle"></span> Generoso
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row24" value="Colérico" />
+              <span class="circle"></span> Intolerante
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row24" value="Melancólico" />
+              <span class="circle"></span> Ingrato
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row24" value="Fleumático" />
+              <span class="circle"></span> Constante
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row25" value="Sanguíneo" />
+              <span class="circle"></span> Levanta Cedo
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row25" value="Colérico" />
+              <span class="circle"></span> Obstinado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row25" value="Melancólico" />
+              <span class="circle"></span> Insastifeito
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row25" value="Fleumático" />
+              <span class="circle"></span> Sensato
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row26" value="Sanguíneo" />
+              <span class="circle"></span> Volúvel
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row26" value="Colérico" />
+              <span class="circle"></span> Irascível
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row26" value="Melancólico" />
+              <span class="circle"></span> Abnegado
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row26" value="Fleumático" />
+              <span class="circle"></span> Indiferente
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>
+              <input type="radio" name="row27" value="Sanguíneo" />
+              <span class="circle"></span> Feliz
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row27" value="Colérico" />
+              <span class="circle"></span> Audaz
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row27" value="Melancólico" />
+              <span class="circle"></span> Inconsolável
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="row27" value="Fleumático" />
+              <span class="circle"></span> Apático
+            </label>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">
+            <button onclick="calcularSoma()">Resultado</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" class="result-text"><p id="resultado"></p></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="tabs">
+      <div class="tab active" onclick="openTab('tab1')" id="tab1">Colérico</div>
+      <div class="tab" onclick="openTab('tab2')" id="tab2">Fleumático</div>
+      <div class="tab" onclick="openTab('tab3')" id="tab3">Melancólico</div>
+      <div class="tab" onclick="openTab('tab4')" id="tab4">Sanguíneo</div>
+    </div>
+    <div class="tab-content conteiner" id="content_tab1" style="display: block">
+      <h2>Temperamento Colérico</h2>
+      <p>
+        Dentre os tipos de temperamento, o colérico se mostra como o mais
+        selvagem entre os demais. Em suma, trata-se do temperamento mais
+        explosivo e agressivo. Isso aponta diretamente para a índole do
+        indivíduo, de maneira tal que você consegue traçar previamente o seu
+        comportamento. Os coléricos são frequentemente atraídos por carreiras em
+        liderança, negócios ou esportes. Sem contar que pessoas detentoras desse
+        temperamento são geralmente dominadoras e ambiciosas. Pessoas com
+        temperamento colérico são geralmente extrovertidas, enérgicas e
+        ambiciosas. Elas são líderes naturais e costumam ter sucesso em
+        carreiras que exigem uma tomada de decisão rápida e assertiva, como
+        negócios, política ou esportes. Exemplos de como o temperamento colérico
+        se manifesta na vida cotidiana: Uma pessoa colérica pode ser a primeira
+        a se levantar de sua cadeira em uma reunião para expressar sua opinião.
+        Uma pessoa colérica pode ser a primeira a se oferecer para ajudar em um
+        projeto. Uma pessoa colérica pode ser a primeira a assumir a liderança
+        de um grupo. Embora também sejam enérgicas, façam planejamentos e tenham
+        determinação, são impulsivas no modo de agir. Com isso, precisam
+        trabalhar aspectos tais como:
+      </p>
+      <strong>Intolerância</strong>
+      <p>
+        Infelizmente, os coléricos se mostram bem limitados com algumas ideias e
+        costumes ao redor. Têm dificuldade em aceitar novidades e introduzir o
+        que é diferente do seu modo de ser e pensar. Em casos mais graves, têm
+        dificuldades para estabelecer relacionamentos e se mostram ofensivos,
+        agredindo a moral e a ética do outro.
+      </p>
+      <strong>Egocentrismo</strong>
+      <p>
+        Existe uma ideia bastante consensual de que os coléricos sejam o centro
+        do universo, o que é verdade. Os coléricos acreditam que tudo deve girar
+        em torno deles, de maneira que apenas eles importam. Portanto, não é
+        difícil inferir que a sua postura acaba dificultando relacionamentos
+        interpessoais com amigos e colegas de trabalho.
+      </p>
+      <strong>Impaciência</strong>
+      <p>
+        A paciência é uma virtude que se mostra estranha a esse grupo. Isso
+        porque eles não se enxergam tão à vontade com um trabalho mais delicado,
+        sensível e que necessita de tempo. Assim, podem comprometer suas
+        atividades diárias e entregar resultados aquém do esperado.
+      </p>
+    </div>
+
+    <div class="tab-content conteiner" id="content_tab2" style="display: none">
+      <h2>Temperamento Fleumático</h2>
+      <p>
+        Dentre os tipos de temperamento, o fleumático se mostra como o mais
+        dócil de todos. Isso porque tem uma postura bastante pacífica, sonhadora
+        e enxerga a vida de um jeito mais positivo. Assim, é confiável e
+        equilibrado como é esperado a partir de seu comportamento. Os
+        fleumáticos são frequentemente calmos e relaxados, mesmo em situações
+        estressantes. Uma parte importante do seu temperamento é ser adepto de
+        uma rotina mais rígida em relação às suas tarefas. Pessoas com
+        temperamento fleumático são geralmente tranquilas, equilibradas e
+        confiáveis. Elas são boas ouvintes e costumam ter sucesso em carreiras
+        que exigem um alto nível de concentração e atenção aos detalhes, como
+        medicina, engenharia ou pesquisa.
+      </p>
+      <strong
+        >Exemplos de como o temperamento fleumático se manifesta na vida
+        cotidiana:</strong
+      >
+      <ul>
+        <li>
+          Uma pessoa fleumática pode ser a pessoa que permanece calma e serena
+          em uma situação de emergência.
+        </li>
+        <li>
+          Uma pessoa fleumática pode ser a pessoa que termina seu trabalho antes
+          do prazo.
+        </li>
+        <li>Uma pessoa fleumática pode ser a pessoa que é sempre pontual.</li>
+        <li>
+          A super valorização do silêncio dá espaço suficiente para pensar em
+          suas ações. Por isso, é difícil ver um fleumático perder o controle.
+        </li>
+      </ul>
+      <strong>Paciência</strong>
+      <p>
+        Paciência não é uma virtude para todos, mas felizmente o fleumático
+        exerce-a com facilidade. Isso é um movimento natural do seu
+        temperamento, de maneira que o coloque em rápida posição de aprendizado.
+        Não é de se admirar que consigam realizar feitos difíceis e importantes
+        em sua vida.
+      </p>
+      <strong>Disciplina</strong>
+      <p>
+        O fleumático só chega no lugar que deseja porque é bastante disciplinado
+        com sua rotina. Ele traça metas com facilidade para que alcance
+        rapidamente os seus objetivos na vida. Por esse motivo, a maioria
+        torna-se personalidade de sucesso ou, não raro, tem uma posição de
+        destaque.
+      </p>
+      <strong>Resistência às mudanças</strong>
+      <p>
+        Apesar de todas as qualidades que trazem, são bastante resistentes em se
+        adequar a mudanças. Uma vez que isso pode tirar seu controle sobre as
+        coisas. Isso acaba tornando-os mais indecisos em alguns momentos, e
+        também mais lentos. Afinal, resistir pode significar atraso ou
+        adaptações tardias.
+      </p>
+    </div>
+
+    <div class="tab-content conteiner" id="content_tab3" style="display: none">
+      <h2>Temperamento Melancólico</h2>
+      <p>
+        O melancólico se mostra bastante sensível com suas emoções e possui um
+        dos tipos de temperamento mais profundos. São detalhistas graças à sua
+        parte introvertida. Porém, apresentam grandes dificuldades em expor suas
+        emoções e sentimentos aos outros. Isto faz com sejam mais distantes nas
+        relações que estabelecem socialmente. Os melancólicos são frequentemente
+        criativos e talentosos, mas podem ser sensíveis a críticas. Embora
+        tenham cautela, costumam ser fiel com aqueles em quem acreditam ou às
+        ideias que defendem. Isso não significa que não podem exercer seu lado
+        de desconfiança e ter cautela quando necessário. Quanto ao lado
+        profissional, o indivíduo melancólico costuma escolher profissões que
+        possa exercer sozinho. Pois sentem-se mais livres sem parceria ou ordens
+        de outra pessoa. Pessoas com temperamento melancólico são geralmente
+        sensíveis, criativas e perfeccionistas. Elas são boas em trabalhar
+        sozinhas e costumam ter sucesso em carreiras que exigem um alto nível de
+        habilidade artística ou intelectual, como música, arte ou literatura.
+      </p>
+      <strong
+        >Exemplos de como o temperamento melancólico se manifesta na vida
+        cotidiana:</strong
+      >
+      <ul>
+        <li>
+          Uma pessoa melancólica pode ser a pessoa que passa horas trabalhando
+          em um projeto até que esteja perfeito.
+        </li>
+        <li>
+          Uma pessoa melancólica pode ser a pessoa que fica triste quando vê
+          alguém passando por dificuldades.
+        </li>
+        <li>
+          Uma pessoa melancólica pode ser a pessoa que tem uma imaginação
+          fértil.
+        </li>
+      </ul>
+      <strong
+        >Ainda que possam se mostrar egoísta, inflexível e, muitas vezes,
+        pessimista, a pessoa melancólica tem o seu lado positivo. Suas maiores
+        qualidades são:</strong
+      >
+      <ul>
+        <li>Lealdade;</li>
+        <li>Sensibilidade;</li>
+        <li>Dedicação.</li>
+      </ul>
+      <p>
+        Além disso, consegue se importar e se dedicar aos demais, quando
+        necessário.
+      </p>
+    </div>
+
+    <div class="tab-content conteiner" id="content_tab4" style="display: none">
+      <h2>Temperamento Sanguíneo</h2>
+      <p>
+        Ao contrário do melancólico, o sanguíneo tem um dos tipos de
+        temperamentos mais otimista do quadro. É muito expansivo, de maneira que
+        sua presença contagia o ambiente onde está. De modo que não passa sem
+        que seja notado. Contudo, pode se mostrar impulsivo, tomando atitudes
+        pouco pensadas em momentos importantes de sua vida. A espontaneidade o
+        faz querer interagir com o máximo de pessoas possível, pois esse é o seu
+        lugar. Por exemplo, é acostumado a fazer gestos chamativos e se sentir
+        muito bem em público. Mostra-se adaptável, entusiasta e resiliente, de
+        maneira que se recupera facilmente de situações difíceis e aprende com
+        suas vivências. Entretanto, os sanguíneos precisam trabalhar sua
+        impulsividade para que não se arrependam de suas atitudes. Além disso, o
+        sanguíneo necessita melhorar a sua superficialidade, falta de atenção e
+        exagero em seu comportamento. Pessoas com temperamento sanguíneo são
+        geralmente extrovertidas, espontâneas e divertidas. Elas são boas em se
+        comunicar e costumam ter sucesso em carreiras que exigem um alto nível
+        de interação social, como vendas, marketing ou entretenimento.
+      </p>
+      <strong
+        >Exemplos de como o temperamento sanguíneo se manifesta na vida
+        cotidiana:
+      </strong>
+      <ul>
+        <li>
+          Uma pessoa sanguínea pode ser a pessoa que é sempre a primeira a
+          chegar a uma festa.
+        </li>
+        <li>
+          Uma pessoa sanguínea pode ser a pessoa que conta histórias engraçadas
+          para animar o grupo.
+        </li>
+        <li>
+          Uma pessoa sanguínea pode ser a pessoa que é sempre o centro das
+          atenções.
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <span id="ano"
+        ><script>
+          document.write(new Date().getFullYear());
+        </script>
+        &copy; Desenvolvido por Jonathan de Morais
+      </span>
+    </footer>
+  </body>
+</html>
